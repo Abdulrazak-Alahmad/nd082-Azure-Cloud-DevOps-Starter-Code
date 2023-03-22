@@ -21,9 +21,7 @@
 		
       		"location": "East US",
       		"vm_size": "Standard_B1s"
-		"azure_tags": {
-				"Udacity": "test"
-			}
+
 	}],
 	"provisioners": [{
 		"inline": [
