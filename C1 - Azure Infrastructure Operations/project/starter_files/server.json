@@ -7,16 +7,16 @@
 	"builders": [{
       		"type": "azure-arm",
    
-      		"client_id": "1cd9e06f-dc36-4fde-a6c1-2a7139e998a8",
-      		"client_secret": "HMz8Q~~kLw2PQpwdVIIfGkkKpVknzdYYDkH3GcVd",
-      		"subscription_id": "8cebf8d3-a110-4cb4-8e82-4f501ae67965",
+      		"client_id": "",
+      		"client_secret": "",
+      		"subscription_id": "",
 		
       		"os_type": "Linux",
       		"image_publisher": "Canonical",
       		"image_offer": "UbuntuServer",
       		"image_sku": "18.04-LTS",
 		
-      		"managed_image_resource_group_name": "Azuredevops",
+      		"managed_image_resource_group_name": "Azuredevops-resources",
       		"managed_image_name": "myPackerImage",
 		
       		"location": "East US",
