@@ -73,8 +73,12 @@ resource "azurerm_linux_virtual_machine" "main" {
   network_interface_ids = [
     azurerm_network_interface.main.id,
   ]
-  source_image_id = data.azurerm_image.image.id
-  availability_set_id = azurerm_availability_set.main.id
+  source_image_reference {
+    publisher = "Canonical"
+    offer     = "UbuntuServer"
+    sku       = "18.04-LTS"
+    version   = "latest"
+  }
 
   os_disk {
     storage_account_type = "Standard_LRS"

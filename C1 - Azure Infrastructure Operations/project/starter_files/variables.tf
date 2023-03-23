@@ -23,7 +23,7 @@ variable "tags" {
   default = "udacity"
 }
 
-variable "count" {
+variable "vm_count" {
   description = "Number of Virtual Machines"
   default = 3
 }
