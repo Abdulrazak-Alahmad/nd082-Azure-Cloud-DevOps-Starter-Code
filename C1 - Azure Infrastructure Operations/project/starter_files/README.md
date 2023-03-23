@@ -30,5 +30,5 @@ For this project, you will write a Packer template and a Terraform template to d
 * This file contains all the user input variables that can be changed username, password, group resource name,location,number of VM and tags variables.
 
 ### Output
-**Your words here**
 
+![ tagging policy](cfe4bd4f-6793-4aa1-bc5b-0d3ca505483d.jpg "policy / tagging policy")
