@@ -25,6 +25,8 @@ For this project, you will write a Packer template and a Terraform template to d
 5. Run **terraform plan** .
 6. Run **terraform apply** (it take few minutes).
 
+Don't forget to ```terraform destroy ``` it once you are done.
+
 #### User Modifications 
 * User can modify the input arguments during the instructions step 7 by modifying default value of arguments in [variables.tf](https://github.com/Abdulrazak-Alahmad/nd082-Azure-Cloud-DevOps-Starter-Code/blob/master/C1%20-%20Azure%20Infrastructure%20Operations/project/starter_files/variables.tf) file.
 * This file contains all the user input variables that can be changed username, password, group resource name, location, number of VM and tags variables.
