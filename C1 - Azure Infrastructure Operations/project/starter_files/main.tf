@@ -60,6 +60,21 @@ resource "azurerm_network_interface" "main" {
   }
 }
 
+resource "azurerm_network_security_rule" "http2lb" {
+  name                        = "${var.prefix}-http2lb"
+  resource_group_name         = azurerm_resource_group.main.name
+  network_security_group_name = azurerm_network_security_group.main.name
+  priority                    = 100
+  direction                   = "Inbound"
+  access                      = "Deny"
+  protocol                    = "*"
+  source_port_range           = "*"
+  destination_port_range      = "*"
+  source_address_prefix       = "*"
+  destination_address_prefix  = "*"
+
+}
+
 resource "azurerm_linux_virtual_machine" "main" {
   count                           = var.vm_count # Count Value read from variable
   name                            = "${var.prefix}-vm-${count.index}"
@@ -73,12 +88,7 @@ resource "azurerm_linux_virtual_machine" "main" {
   network_interface_ids = [
     azurerm_network_interface.main.id,
   ]
-  source_image_reference {
-    publisher = "Canonical"
-    offer     = "UbuntuServer"
-    sku       = "18.04-LTS"
-    version   = "latest"
-  }
+  source_image_id                 = data.azurerm_image.main.id
 
   os_disk {
     storage_account_type = "Standard_LRS"
