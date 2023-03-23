@@ -18,7 +18,7 @@ For this project, you will write a Packer template and a Terraform template to d
 
 ### Instructions
 1.  Go to Azure portal and create a resources group.  
-    > **NOTE:** The name of the resource group set here is the one that will be used during the build of packer template and the deployment of terraform template. 
+    > *NOTE:* The name of the resource group set here is the one that will be used during the build of packer template and the deployment of terraform template. 
 2. Run **packer validate** .
 3. Run **packer build** .
 4. Run **terraform validate** .
@@ -27,7 +27,7 @@ For this project, you will write a Packer template and a Terraform template to d
 
 #### User Modifications 
 * User can modify the input arguments during the instructions step 7 by modifying default value of arguments in [variables.tf](https://github.com/Abdulrazak-Alahmad/nd082-Azure-Cloud-DevOps-Starter-Code/blob/master/C1%20-%20Azure%20Infrastructure%20Operations/project/starter_files/variables.tf) file.
-* This file contains all the user input variables that can be changed username, password, group resource name,location,number of VM and tags variables.
+* This file contains all the user input variables that can be changed username, password, group resource name, location, number of VM and tags variables.
 
 ### Output
 
