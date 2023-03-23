@@ -18,7 +18,7 @@ For this project, you will write a Packer template and a Terraform template to d
 
 ### Instructions
 1.  Go to Azure portal and create a resources group.  
-    > *NOTE:* The name of the resource group set here is the one that will be used during the build of packer template and the deployment of terraform template. 
+    > ***NOTE:*** The name of the resource group set here is the one that will be used during the build of packer template and the deployment of terraform template. 
 2. Run **packer validate** .
 3. Run **packer build** .
 4. Run **terraform validate** .
