@@ -32,5 +32,8 @@ Don't forget to ```terraform destroy ``` it once you are done.
 * This file contains all the user input variables that can be changed username, password, group resource name, location, number of VM and tags variables.
 
 ### Output
-
+Tagging policy screenshot
 ![ tagging policy](cfe4bd4f-6793-4aa1-bc5b-0d3ca505483d.jpg "policy / tagging policy")
+
+Terraform plan screenshot
+![ terraform plan](terraform_plan.jpeg "terraform / terraform plan")

@@ -19,8 +19,11 @@ variable "password" {
 }
 
 variable "tags" {
-  description = "Vms tags"
-  default = "udacity"
+  description = "Tags need to be defined so that resources can be created on Azure"
+  type        = map(string)
+  default = {
+    project_name = "udacity"
+  }
 }
 
 variable "vm_count" {
