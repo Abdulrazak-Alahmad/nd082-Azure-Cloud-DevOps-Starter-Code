@@ -38,5 +38,5 @@ Tagging policy screenshot
 Terraform plan screenshot
 ![ terraform plan](terraform_plan.jpeg "terraform / terraform plan")
 
-Terraform plan screenshot
-![ terraform apply](terraform_apply.jpeg "terraform / terraform apply")
+Terraform apply screenshot
+![ terraform apply](terraform_apply.png "terraform / terraform apply")
